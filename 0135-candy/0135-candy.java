@@ -7,13 +7,8 @@ class Solution {
         int ans = 0;
 
         for(int i = 1; i < ratings.length; i++) {
-            System.out.println("[i] : " + i);
             if(ratings[i] > ratings[i - 1]) {
                 nums[i] = nums[i - 1] + 1;
-                System.out.println("nums[i] : " + nums[i]);
-                System.out.println("nums[i - 1] : " + nums[i - 1]);
-                System.out.println("ratings[i] : " + ratings[i]);
-                System.out.println("ratings[i - 1] : " + ratings[i - 1]);
             } 
         }
 
